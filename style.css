@@ -1,0 +1,155 @@
+/* font for banner header-----
+--------------------------- */
+.font {
+    @import url'https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@400;500&family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap'
+
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 50px;
+}
+
+/* header design */
+
+.bg-size {
+    margin-bottom: 10%;
+}
+
+.banner {
+    display: flex;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 3%;
+
+
+}
+
+.banner:hover {
+    background-color: lightcoral;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.half-width img {
+    width: 100%;
+}
+
+.article-part {
+    padding-top: 80px;
+    margin-right: 10px;
+}
+
+.player-img {
+    padding-top: 50px;
+}
+
+header .banner a {
+    text-decoration: none;
+    font-size: larger;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+}
+
+/* header design end */
+
+/* main part start */
+
+.anchor {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: black;
+    width: 170px;
+
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 7%;
+    margin-bottom: 20px;
+}
+
+nav .anchor a {
+    text-decoration: none;
+    background-color: white;
+    padding: 20px 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: black;
+    font-weight: 700;
+    border-radius: 7px;
+
+}
+
+#blog-clr {
+    background-color: red;
+    color: white;
+}
+
+/* main part end */
+
+/* article part start */
+.blogs {
+    margin-left: 4%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+
+}
+
+main {
+    display: flex;
+    margin: 7%;
+}
+
+
+.blog-image img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+
+#space-right {
+    margin-right: 20px;
+}
+
+.none {
+    visibility: hidden;
+}
+
+/* article part end */
+
+/* footer start */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+hr {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    border: 0.1px solid gray;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
