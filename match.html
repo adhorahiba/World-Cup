@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcomming Match</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/dc04577cf7.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* font for banner header-----
+--------------------------- */
+        .font {
+            @import url'https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@400;500&family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap'
+
+            font-family: 'Lato', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+
+            font-size: 50px;
+        }
+
+        /* header design */
+
+        .bg-size {
+            margin-bottom: 10%;
+        }
+
+        .banner {
+            display: flex;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            margin-left: 7%;
+            margin-right: 7%;
+            padding-bottom: 10px;
+            padding-left: 80px;
+            padding-right: 80px;
+            margin-top: 3%;
+
+
+        }
+
+        .banner:hover {
+            background-color: lightcoral;
+        }
+
+        .half-width {
+            width: 50%;
+        }
+
+        .half-width img {
+            width: 100%;
+        }
+
+        .article-part {
+            padding-top: 80px;
+            margin-right: 10px;
+        }
+
+        .player-img {
+            padding-top: 50px;
+        }
+
+        header .banner a {
+            text-decoration: none;
+            font-size: larger;
+            background-color: red;
+            padding: 5px 10px;
+            border-radius: 3px;
+            color: white;
+        }
+
+        /* header design end */
+
+        /* main part start */
+
+        .anchor {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            background-color: black;
+            width: 170px;
+
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-left: 7%;
+            margin-bottom: 20px;
+        }
+
+        nav .anchor a {
+            text-decoration: none;
+            background-color: white;
+            padding: 20px 40px;
+            padding-right: 10px;
+            padding-left: 10px;
+            color: black;
+            font-weight: 700;
+            border-radius: 7px;
+
+        }
+
+        #blog-clr {
+            background-color: red;
+            color: white;
+        }
+
+        /* main part end */
+
+        /* article part start */
+        .blogs {
+            margin-left: 4%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 15px;
+
+        }
+
+        .blog-vs {
+            display: flex;
+        }
+
+        main {
+            display: flex;
+            margin: 7%;
+        }
+
+
+        .blog-image img {
+            width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .blog-first {
+            margin-top: 60px;
+        }
+
+
+
+        #space-right {
+            margin-right: 20px;
+        }
+
+        .none {
+            visibility: hidden;
+        }
+
+        .blog-schedule {
+            margin-left: 30px;
+        }
+
+        .view-all {
+            text-decoration: none;
+            font-size: larger;
+            background-color: red;
+            padding: 5px 20px;
+            border-radius: 3px;
+            color: white;
+            margin-left: 50%;
+            visibility: hidden;
+        }
+
+
+        /* article part end */
+
+        /* footer start */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            margin-top: 15px;
+        }
+
+        hr {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 30px;
+            border: 0.1px solid gray;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+
+        }
+
+        .blog-all img {
+            width: 100px;
+        }
+
+        /* responsive */
+
+        /* for mobile */
+        @media only screen and (max-width: 687px) {
+            .banner {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .none {
+                display: none;
+            }
+
+            .article-part {
+                padding-left: 90px;
+            }
+
+            .player-img {
+                width: 100%;
+            }
+
+            .anchor {
+                background-color: white;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            main {
+                flex-direction: column;
+                padding-left: 100px;
+
+            }
+
+            .blogs {
+
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+
+            }
+
+
+            footer {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+        }
+
+        /* for tablet */
+        @media only screen and (min-width: 688px) and (max-width: 991px) {
+            .banner {
+                display: grid;
+                grid-template-rows: repeat(1, 1fr);
+            }
+
+            .blogs {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+            .view-all {
+                visibility: visible;
+            }
+
+
+            .article-part {
+                padding-left: 90px;
+            }
+
+            .player-img {
+                width: 100%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="bg-size">
+        <div class="banner">
+            <div class="half-width article-part">
+                <h1 class="font">The Greatest
+                    show on the
+                    earth</h1>
+                <p>Brazil is the largest country in South America and the fifth largest nation in the world.The country
+                    is vast, it is divided into 26 states and one Federal District. </p>
+                <a href="https://toffeelive.com/#video/c4007b19e06da78a3239a44be37bcf76" target="_blank">Watch
+                    Live <i class="fa-solid fa-chevron-right"></i> </a>
+            </div>
+            <div class="half-width player-img">
+                <img src="assets/Banner Image.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main part start -->
+
+    <main>
+        <nav>
+            <div class="anchor">
+                <a href="">Upcoming Match</a>
+                <a href="">All Group</a>
+                <a id="blog-clr" href="">Blog</a>
+            </div>
+        </nav>
+
+        <!-- article part -->
+
+        <article>
+            <section>
+                <div class="blogs blog-first">
+                    <div class="blog">
+                        <div class="blog-all">
+                            <div class="blog-vs">
+                                <div class="blog-image">
+                                    <img src="assets/germany Flag.png" alt="">
+
+                                </div>
+                                <div>
+                                    <p>VS</p>
+                                </div>
+                                <!-- vs -->
+
+                                <div class="blog-image">
+                                    <img src="assets/Flag.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="blog-schedule">
+                                <p>Germany VS France </p>
+                                <p>April 01, 2023, 1.00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-all">
+                            <div class="blog-vs">
+                                <div class="blog-image">
+                                    <img src="assets/germany Flag.png" alt="">
+
+                                </div>
+                                <div>
+                                    <p>VS</p>
+                                </div>
+                                <!-- vs -->
+
+                                <div class="blog-image">
+                                    <img src="assets/Flag.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="blog-schedule">
+                                <p>Germany VS France </p>
+                                <p>April 01, 2023, 1.00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-all">
+                            <div class="blog-vs">
+                                <div class="blog-image">
+                                    <img src="assets/germany Flag.png" alt="">
+
+                                </div>
+                                <div>
+                                    <p>VS</p>
+                                </div>
+                                <!-- vs -->
+
+                                <div class="blog-image">
+                                    <img src="assets/Flag.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="blog-schedule">
+                                <p>Germany VS France </p>
+                                <p>April 01, 2023, 1.00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </article>
+        <!-- article end -->
+    </main>
+    <main>
+        <nav>
+            <div class="none anchor">
+                <a href="">Upcoming Match</a>
+                <a href="">All Group</a>
+                <a id="blog-clr" href="">Blog</a>
+            </div>
+        </nav>
+
+        <!-- article part -->
+
+        <article>
+            <section>
+                <div class="blogs blog-second">
+                    <div class="blog">
+                        <div class="blog-all">
+                            <div class="blog-vs">
+                                <div class="blog-image">
+                                    <img src="assets/germany Flag.png" alt="">
+
+                                </div>
+                                <div>
+                                    <p>VS</p>
+                                </div>
+                                <!-- vs -->
+
+                                <div class="blog-image">
+                                    <img src="assets/Flag.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="blog-schedule">
+                                <p>Germany VS France </p>
+                                <p>April 01, 2023, 1.00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-all">
+                            <div class="blog-vs">
+                                <div class="blog-image">
+                                    <img src="assets/germany Flag.png" alt="">
+
+                                </div>
+                                <div>
+                                    <p>VS</p>
+                                </div>
+                                <!-- vs -->
+
+                                <div class="blog-image">
+                                    <img src="assets/Flag.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="blog-schedule">
+                                <p>Germany VS France </p>
+                                <p>April 01, 2023, 1.00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-all">
+                            <div class="blog-vs">
+                                <div class="blog-image">
+                                    <img src="assets/germany Flag.png" alt="">
+
+                                </div>
+                                <div>
+                                    <p>VS</p>
+                                </div>
+                                <!-- vs -->
+
+                                <div class="blog-image">
+                                    <img src="assets/Flag.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="blog-schedule">
+                                <p>Germany VS France </p>
+                                <p>April 01, 2023, 1.00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </article>
+        <!-- article end -->
+    </main>
+    <main>
+        <nav>
+            <div class="none anchor">
+                <a href="">Upcoming Match</a>
+                <a href="">All Group</a>
+                <a id="blog-clr" href="">Blog</a>
+            </div>
+        </nav>
+
+        <!-- article part -->
+
+
+        <!-- article end -->
+    </main>
+
+    <footer>
+        <h1>Goal</h1>
+        <hr>
+        <a href="">Contact Us</a>
+        <a href="">Terms of Service</a>
+        <a href="">Privacy Policy</a>
+        <a href="">rivacy Settings</a>
+        <a href="">Goal App</a>
+        <a href="">Goal live</a>
+        <p>
+        <h3>Follow Us On</h3>
+        <a href="https://www.facebook.com/adhora.hiba/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCBzuWvGgOmWyb89kn_ZA0lA" target="_blank"><i
+                class="fa-brands fa-youtube"></i></a>
+        </p>
+
+    </footer>
+</body>
+
+</html>
